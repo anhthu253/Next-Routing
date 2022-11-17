@@ -5,10 +5,11 @@ const StyledLink = styled.a`
   color: white;
   background: darkslategray;
   border: none;
-  text-decoration: none;
+  text-decoration: ${({ active }) => (active ? "underline" : "none")};
 
   &:hover {
     background: darkgreen;
+    cursor: pointer;
   }
 `;
 
